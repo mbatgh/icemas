@@ -1,0 +1,117 @@
+# this is an example parameter-file for Icemas ...
+#
+# the word on the lefthandside of each line is a keyword 
+# corresponding to a certain variable of the simulation-run
+# the second word is the value for this variable.
+# (the only syntax-rule is: one keyord -> one line, you must not
+# use any keyword within a comment!)
+# the name of the system-file:
+
+system_filename    system
+
+# the name of the file containing the initial coordinates:
+
+r0_filename        r0
+
+# total number of iterationsteps:
+
+maxit              1000
+
+# timestep [picoseconds]
+
+dt                 0.002
+
+# boolean (1: use Nose-Hoover-thermostat, 0: don't use it)
+
+NHT                1
+
+# desired TEMPERATURE:
+
+temperature        300.0
+
+# relaxation-parameter for Nose-Hoover-thermosta:
+
+tau                0.04
+
+# side-length of the simulation-box [nanometer]
+
+boxlength          2.0
+
+# parameters for the Ewald-sum:
+
+etaL               5.36
+k_max              5
+ksq_max            27
+
+# parameter for SHAKE-algorithm:
+
+shake_crit         1.0e-03
+
+# CUTOFF-radius (in units of the largest LJ-radius):
+
+cutoff             2.5
+
+# second CUTOFF-radius for neighborlist-algorithm 
+# (in units of the largest LJ-radius):
+
+far_ctf            2.75
+
+# seed for the random-generator:
+
+random_seed        143
+
+# write thermodynamic data in file each 'write-step' timesteps:
+
+write_step         1
+
+# time-step, at which to close down the thermostat:
+# (if end_thermostat<maxit and NHT=0, a simple kineetostat is used)
+
+end_thermostat     1000
+
+# time-step, at which to begin summing up for the averages:
+
+begin_averages     200
+
+# boolean (1: use Ewald-sum, 0: don't use it, i.e.: no electrostatic interactions)
+
+EWALD              0
+
+# boolean (1: use neighborlist-algorithm with self-adapting interval, otherwise 0)
+
+NL_SAI             0
+
+# boolean (1: use neighborlist-algorithm with constant interval, otherwise 0)
+
+NL_CI              1
+
+# constant interval of timesteps for neighborlist-updates:
+
+nl_interval        10
+
+# interval of timesteps for calculating and writing phase-seperation:
+
+phase_sep_interval 10000
+
+# interval of timesteps for calculating angle-distribution-functions:
+
+angdf_step         10000 
+dhadf_step         10000
+idhdf_step         10000
+
+# number of molecules and angles used for the 
+# calculation of angle-distribution-functions:
+
+SP_ADIST           0
+NR_ADIST           0
+SP_DHADIST         0
+NR_DHADIST         0
+SP_IDHADIST        0
+NR_IDHADIST        0
+
+# number of molecules and sites used for the calculation of 
+# pair-correlation-functions (molecule-1 site-1 molecule-2 site-2)
+# can be given up to NR_PCFSMAX times (as designated in the header 'first.h'):
+
+PCF                0 0 0 0
+

@@ -1,0 +1,62 @@
+# butane system file
+#
+
+   1     # Nr. of different species' of molecules
+   2     # Nr. of different Lennard-Jones-types (including "NO" LJ-type !)
+
+#
+# for each species:
+#
+# NoM NoS NoB NoA NoD NoI
+#
+
+  120 4   3   2   1   0 
+
+#
+# for each LJ-type
+#
+# Number  - epsilon [kJ/mol] - sigma [nm]
+#
+
+   0  0.0      0.0
+   1  0.6984   0.3920
+
+#
+# for each species :
+# 
+# for each site:
+#
+# number  LJ-type   mass [amu]  charge [e0]
+#
+
+   0  1  12.51  0.0
+   1  1  12.51  0.0
+   2  1  12.51  0.0
+   3  1  12.51  0.0 
+
+#
+# for each bond
+#
+# number index1 index2 bondlenght [nm]
+#
+
+   0  0  1  0.153 
+   1  1  2  0.153
+   2  2  3  0.153
+
+#
+# for each angle
+# 
+# number index1 index2 indxe3 angle force 
+# 
+
+  0  0 1 2  1.910554   240.0
+  1  1 2 3  1.910554   240.0
+
+# 
+# for each dihedral angle
+#
+# number index1 index2 indxe3 index4 period angle force
+#
+
+  0   0 1 2 3   3   3.1415927   8.0

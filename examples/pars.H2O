@@ -1,0 +1,36 @@
+system_filename    water.spc
+r0_filename        r0.water
+maxit              5000
+dt                 0.002
+NHT                1
+temperature        300.0
+tau                0.04
+boxlength          2.1467
+etaL               5.36
+shake_crit         1.0e-03
+k_max              5
+ksq_max            27
+cutoff             2.5
+far_ctf            2.75
+random_seed        143
+write_step         10
+end_thermostat     10000
+begin_averages     2000
+EWALD              1
+NL_SAI             0
+NL_CI              1
+nl_interval        10
+phase_sep_interval 10000
+angdf_step         10000 
+dhadf_step         10000
+idhdf_step         10000
+pcf_step           40
+SP_ADIST           0
+NR_ADIST           0
+SP_DHADIST         0
+NR_DHADIST         0
+SP_IDHADIST        0
+NR_IDHADIST        0
+PCF                0 0 0 0
+PCF                0 1 0 1
+PCF                0 0 0 1

@@ -1,0 +1,50 @@
+# water system file
+#
+
+   1     # Nr. of different species' of molecules
+   2     # Nr. of different Lennard-Jones-types (including "NO" LJ-type !)
+
+#
+# for each species:
+#
+# NoM NoS NoB NoA NoD NoI
+#
+
+   500  1   0   0   0   0
+
+#
+# for each LJ-type
+#
+# Number  - epsilon [kJ/mol] - sigma [nm]
+#
+
+   0  0.0      0.0
+   1  0.5      0.3
+
+#
+# for each species :
+# 
+# for each site:
+#
+# number  LJ-type   mass [amu]  charge [e0]
+#
+
+   0  1  30.0  0.0
+
+#
+# for each bond
+#
+# number index1 index2 bondlenght [nm]
+#
+
+#
+# for each angle
+# 
+# number index1 index2 indxe3 angle force 
+# 
+   
+# 
+# for each dihedral angle
+#
+# number index1 index2 indxe3 index4 period angle force
+#
