@@ -36,7 +36,7 @@ The binary *icemas* should now be in /usr/local/bin
 
 ## Usage
 
-Have a look at the content of the [examples](examples folder) for a quick start.
+Have a look at the content of the [examples](examples) folder for a quick start.
 
 Generally three input-files are required:
 
