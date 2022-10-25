@@ -42,11 +42,11 @@ Generally three input-files are required:
 
 1. A parameter-file called *pars.name*, where *name* is an arbitrary ID chosen by the user.
 A default-parameter-file with short explanations of all possible entries are explained can be found
-in the examples folder.
+in the [examples](examples) folder.
 2. A system-file (name of which must be given in the parameter-file). It contains information such
-as number and type of molecules and force-field-parameters. Examples can be found in the [system](system folder).
+as number and type of molecules and force-field-parameters. Examples can be found in the [system](system) folder.
 3. a file (name provided in the parameter-file) containing the initial-coordinates. Examples, and a tool
-to generate such files are provided in the [coords](coords folder)
+to generate such files are provided in the [coords](coords) folder.
 
 Given these files the simulation is started on the command-line, by typing
 ```
